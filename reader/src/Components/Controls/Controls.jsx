@@ -8,7 +8,7 @@ const Controls = ({ onControlsBtn, index, items }) => (
       type="button"
       className="button"
       disabled={index <= 1}
-      data-action="back"
+      data-action="prev"
       onClick={onControlsBtn}
     >
       Назад
@@ -17,7 +17,7 @@ const Controls = ({ onControlsBtn, index, items }) => (
       type="button"
       className="button"
       disabled={index === items.length}
-      data-action="forvard"
+      data-action="next"
       onClick={onControlsBtn}
     >
       Вперед

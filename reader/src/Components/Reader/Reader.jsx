@@ -15,11 +15,11 @@ class Reader extends React.Component {
     const {
       dataset: { action },
     } = target;
-    if (action === 'back') {
+    if (action === 'prev') {
       this.setState(prev => ({
         index: prev.index - 1,
       }));
-    } else if (action === 'forvard') {
+    } else if (action === 'next') {
       this.setState(prev => ({
         index: prev.index + 1,
       }));
